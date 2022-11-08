@@ -26,7 +26,7 @@ public class ProductController {
 
     @GetMapping("/")
     public String Status() {
-        return "up and nt running";
+        return "up and running with new";
     }
 
     @GetMapping("/count")
