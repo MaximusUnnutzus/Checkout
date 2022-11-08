@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ch.zhaw.checkout.checkout.Product;
 
-//Test
+//Test ob Deployment
 @RestController
 public class ProductController {
     private List<Product> products = new ArrayList<Product>();
