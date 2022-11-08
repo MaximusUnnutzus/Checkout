@@ -1,4 +1,5 @@
 package ch.zhaw.checkout.checkout.RestController;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,12 +7,12 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import ch.zhaw.checkout.checkout.Product;
 
+//Test
 @RestController
 public class ProductController {
-private List<Product> products = new ArrayList<Product>();
+    private List<Product> products = new ArrayList<Product>();
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
@@ -24,12 +25,12 @@ private List<Product> products = new ArrayList<Product>();
     }
 
     @GetMapping("/")
-    public String Status(){
+    public String Status() {
         return "up and running";
     }
 
     @GetMapping("/count")
-    public int Count(){
+    public int Count() {
         return products.size();
     }
 }
