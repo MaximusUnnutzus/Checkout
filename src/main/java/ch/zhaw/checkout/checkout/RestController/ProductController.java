@@ -26,7 +26,7 @@ public class ProductController {
 
     @GetMapping("/")
     public String Status() {
-        return "up and running";
+        return "up and running and balbla";
     }
 
     @GetMapping("/count")
